@@ -1,0 +1,9 @@
+version: !!str 3.8
+services:
+   pydock:
+     build: .
+     image: pydock
+     scale: 3
+     expose:
+      - "5000"
+     restart: unless-stopped
