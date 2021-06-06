@@ -2,8 +2,9 @@ version: !!str 3.8
 services:
    pydock:
      build: .
+     #container_name: pydock
      image: pydock
-     scale: 3
+     #     scale: 3
      expose:
       - "5000"
      restart: unless-stopped
